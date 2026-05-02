@@ -1,0 +1,3 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/GPUAnimationForDOTS/Source/Editor/Toolkit/ConversionWindow.uss?fileID=7433441132597879392&amp;guid=0f75e75b7e005784eb0be2d1f8b89ada&amp;type=3#ConversionWindow"/>
+</ui:UXML>
