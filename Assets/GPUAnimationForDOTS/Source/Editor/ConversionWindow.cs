@@ -14,15 +14,17 @@
 
 using System;
 using UnityEditor;
+using UnityEngine.UIElements;
 
 namespace GPUAnimationForDOTS.Source.Editor {
     
     public sealed class ConversionWindow : EditorWindow {
         
+        private VisualElement _root;
         private static ToolkitData? _toolkitData;
         private static ToolkitData ToolkitData => _toolkitData ??= new ToolkitData("ConversionWindow");
         
-        [MenuItem("Tools/GPUAnimationForDOTS")]
+        [MenuItem("Tools/GPU Animation For DOTS")]
         private static void ShowWindow() {
             var window = GetWindow<ConversionWindow>();
             window.titleContent = new UnityEngine.GUIContent("GPU Animation For DOTS");
@@ -31,6 +33,14 @@ namespace GPUAnimationForDOTS.Source.Editor {
 
         private void OnEnable() {
             
+        }
+        
+        private VisualElement InitializeRootVisualElement() {
+            var root = rootVisualElement;
+            root.Clear();
+            ToolkitData.Clone(root);
+            root.dataSource = this;
+            return root;
         }
     }
 }

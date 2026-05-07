@@ -1,3 +1,9 @@
-:root {
+.root {
+}
 
+.text {
+    -unity-font-definition: resource("Fonts/Montserrat/static/Montserrat-Regular");
+}
+
+.objectfield {
 }
